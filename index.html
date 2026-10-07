@@ -1,209 +1,158 @@
-overflow:hidden;
+ height: 23px;
+      min-width: 23px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ff8c00;
+      color: #000;
+      font-weight: 900;
+      font-size: 13px;
+      box-shadow: 0 0 12px rgba(255,140,0,.55);
+    }
 
-box-shadow:
+    .join-btn {
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      color: #111;
+      font-size: 18px;
+      font-weight: 900;
+      padding: 17px 20px;
+      border-radius: 14px;
+      background: linear-gradient(90deg, #ffb300, #ff7900, #ffb300);
+      background-size: 200% auto;
+      box-shadow:
+        0 0 12px rgba(255,140,0,.7),
+        0 0 35px rgba(255,100,0,.45),
+        0 8px 25px rgba(0,0,0,.35);
+      transition: .25s ease;
+      animation: buttonGlow 1.8s ease-in-out infinite;
+    }
 
-0 0 15px
-rgba(180,70,255,.45),
+    @keyframes buttonGlow {
+      0%,100% {
+        box-shadow:
+          0 0 12px rgba(255,140,0,.65),
+          0 0 30px rgba(255,100,0,.3),
+          0 8px 25px rgba(0,0,0,.35);
+      }
+      50% {
+        box-shadow:
+          0 0 22px rgba(255,170,0,.95),
+          0 0 55px rgba(255,100,0,.55),
+          0 8px 30px rgba(0,0,0,.4);
+      }
+    }
 
-0 0 35px
-rgba(180,70,255,.18);
+    .join-btn:hover {
+      transform: translateY(-2px) scale(1.01);
+      background-position: right center;
+    }
 
-transition:.25s;
+    .join-btn:active {
+      transform: scale(.98);
+    }
 
-}
+    .telegram {
+      font-size: 12px;
+      color: #888;
+      margin-top: 17px;
+    }
 
+    .footer {
+      margin-top: 22px;
+      color: #555;
+      font-size: 11px;
+    }
 
-/* BUTTON SHINE */
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 27px;
+      }
 
-.join-btn::before{
-
-content:"";
-
-position:absolute;
-
-top:0;
-
-left:-100%;
-
-width:50%;
-
-height:100%;
-
-background:
-
-linear-gradient(
-90deg,
-transparent,
-rgba(255,255,255,.65),
-transparent
-);
-
-transform:skewX(-20deg);
-
-animation:shine 3s infinite;
-
-}
-
-
-@keyframes shine{
-
-0%{
-left:-100%;
-}
-
-60%{
-left:-100%;
-}
-
-80%{
-left:130%;
-}
-
-100%{
-left:130%;
-}
-
-}
-
-
-.join-btn:hover{
-
-transform:translateY(-2px);
-
-box-shadow:
-
-0 0 20px
-rgba(190,80,255,.65),
-
-0 0 45px
-rgba(190,80,255,.25);
-
-}
-
-
-.join-btn:active{
-
-transform:scale(.98);
-
-}
-
-
-/* BOTTOM */
-
-.bottom-text{
-
-margin-top:17px;
-
-font-size:11px;
-
-color:
-rgba(255,255,255,.38);
-
-}
-
-
-/* MOBILE */
-
-@media(max-width:480px){
-
-.container{
-
-padding:
-35px 20px 28px;
-
-}
-
-h1{
-
-font-size:28px;
-
-}
-
-}
-
-</style>
-
+      .logo {
+        width: 90px;
+        height: 90px;
+        font-size: 36px;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
+  <main class="container">
 
-<!-- WATER DROPS -->
+    <div class="logo">
+      <span>👑</span>
+    </div>
 
-<div class="rain">
+    <h1>JACKPOT KING GURU</h1>
 
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
-<div class="drop"></div>
+    <p class="subtitle">
+      Welcome to the official Jackpot King Guru channel.
+      <br>
+      Join the Telegram community now.
+    </p>
 
-</div>
+    <div class="card">
 
+      <div class="tag">
+        👑 OFFICIAL TELEGRAM CHANNEL
+      </div>
 
-<!-- PAGE -->
+      <div class="features">
+        <div class="feature">
+          <div class="check">✓</div>
+          <div>Join the Jackpot King Guru community</div>
+        </div>
 
-<div class="page">
+        <div class="feature">
+          <div class="check">✓</div>
+          <div>Get channel updates directly on Telegram</div>
+        </div>
 
-<div class="container">
+        <div class="feature">
+          <div class="check">✓</div>
+          <div>Stay connected with the latest updates</div>
+        </div>
+      </div>
 
+      <a
+        href="https://t.me/+zm-nDu_ZD48zYmU1"
+        class="join-btn"
+        id="joinButton"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        🚀 JOIN TELEGRAM
+      </a>
 
-<div class="top">
-ESTD 2015
-</div>
+      <div class="telegram">
+        🔒 You will be redirected to Telegram
+      </div>
 
+    </div>
 
-<h1>
-Jackpot King Guru
-</h1>
+    <div class="footer">
+      © 2026 Jackpot King Guru
+    </div>
 
+  </main>
 
-<div class="subtitle">
-CRICKET • ANALYSIS • UPDATES
-</div>
+  <!-- =========================
+       JOIN / SUBSCRIBE EVENT
+  ========================== -->
+  <script>
+    document.getElementById("joinButton").addEventListener("click", function () {
 
+      if (typeof fbq === "function") {
+        fbq('track', 'Subscribe');
+      }
 
-<div class="description">
-
-Join the official Jackpot King Guru
-Telegram channel for cricket analysis,
-match updates and insights.
-
-</div>
-
-
-<a
-href="https://t.me/+zm-nDu_ZD48zYmU1"
-class="join-btn"
-id="joinBtn"
-onclick="fbq('track','Subscribe');"
->
-
-JOIN TELEGRAM
-
-</a>
-
-
-<div class="bottom-text">
-
-Tap the button above to join the channel.
-
-</div>
-
-
-</div>
-
-</div>
-
+    });
+  </script>
 
 </body>
 </html>
