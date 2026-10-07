@@ -1,0 +1,209 @@
+overflow:hidden;
+
+box-shadow:
+
+0 0 15px
+rgba(180,70,255,.45),
+
+0 0 35px
+rgba(180,70,255,.18);
+
+transition:.25s;
+
+}
+
+
+/* BUTTON SHINE */
+
+.join-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:50%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.65),
+transparent
+);
+
+transform:skewX(-20deg);
+
+animation:shine 3s infinite;
+
+}
+
+
+@keyframes shine{
+
+0%{
+left:-100%;
+}
+
+60%{
+left:-100%;
+}
+
+80%{
+left:130%;
+}
+
+100%{
+left:130%;
+}
+
+}
+
+
+.join-btn:hover{
+
+transform:translateY(-2px);
+
+box-shadow:
+
+0 0 20px
+rgba(190,80,255,.65),
+
+0 0 45px
+rgba(190,80,255,.25);
+
+}
+
+
+.join-btn:active{
+
+transform:scale(.98);
+
+}
+
+
+/* BOTTOM */
+
+.bottom-text{
+
+margin-top:17px;
+
+font-size:11px;
+
+color:
+rgba(255,255,255,.38);
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+.container{
+
+padding:
+35px 20px 28px;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- WATER DROPS -->
+
+<div class="rain">
+
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+<div class="drop"></div>
+
+</div>
+
+
+<!-- PAGE -->
+
+<div class="page">
+
+<div class="container">
+
+
+<div class="top">
+ESTD 2015
+</div>
+
+
+<h1>
+Jackpot King Guru
+</h1>
+
+
+<div class="subtitle">
+CRICKET • ANALYSIS • UPDATES
+</div>
+
+
+<div class="description">
+
+Join the official Jackpot King Guru
+Telegram channel for cricket analysis,
+match updates and insights.
+
+</div>
+
+
+<a
+href="https://t.me/+zm-nDu_ZD48zYmU1"
+class="join-btn"
+id="joinBtn"
+onclick="fbq('track','Subscribe');"
+>
+
+JOIN TELEGRAM
+
+</a>
+
+
+<div class="bottom-text">
+
+Tap the button above to join the channel.
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>
